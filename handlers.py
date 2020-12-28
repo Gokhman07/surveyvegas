@@ -11,7 +11,7 @@ from emoji import  emojize
 
 
 from utility import SMILE, back_but
-from mysqldb import *
+#from mysqldb import *
 
 i=0
 
