@@ -49,7 +49,8 @@ def anketa_set_question(bot, update):  # временно сохраняем о�
     #return "evaluation"  # ключ для определения следующего шага
 
 def thanks(bot, update):
-    print("trgt")
+    global i
+    i=0
     bot.message.reply_text("Дякуємо за Ваш відгук!!",reply_markup=ReplyKeyboardRemove())
   
 def next_step():
