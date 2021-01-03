@@ -42,15 +42,13 @@ def anketa_set_question(bot, update):  # временно сохраняем о�
     else:
         reply_keyboard = [['ЗАВЕРШИТИ ЗАПОВНЕННЯ']]
         bot.message.reply_text("Коментарі до оцінки (напішіть або натисніть 'ЗАВЕРШИТИ ЗАПОВНЕННЯ')", reply_markup=ReplyKeyboardMarkup( reply_keyboard, resize_keyboard=True, one_time_keyboard=True))
-        
+        i=0
            
     
         # при нажатии клавиатура исчезает
     #return "evaluation"  # ключ для определения следующего шага
 
 def thanks(bot, update):
-    global i
-    i=0
     bot.message.reply_text("Дякуємо за Ваш відгук!!",reply_markup=ReplyKeyboardRemove())
   
 def next_step():
