@@ -1,9 +1,8 @@
 import requests
-from bs4 import BeautifulSoup
+=
 from utility import get_keyboard
 from  telegram import  KeyboardButton, ReplyKeyboardMarkup, ParseMode, Location, Venue, InlineKeyboardMarkup
 from  telegram.ext import ConversationHandler
-from glob import glob
 from telegram import ReplyKeyboardRemove
 from  random import  choice
 from emoji import  emojize
@@ -58,11 +57,6 @@ def main_keyboard(bot, update):
   
     bot.message.reply_text("Главное меню", reply_markup=get_keyboard())
 
-# функция печатает и отвечает на полученные геоданные
-def get_location(bot, update):
-    print('Hi')
-    print(bot.message.location)
-   # bot.message.reply_text('{}, мы получили ваше местоположение!'.format(bot.message.chat.first_name))
 
 def make_keyboard(bot,update):
    result=[]
