@@ -21,7 +21,7 @@ updater=Updater(TG_TOKEN,use_context=True)
 updater.start_webhook(listen="0.0.0.0",
 port=int(PORT),
 url_path=TG_TOKEN)
-updater.bot.setWebhook('https://onatschedule.herokuapp.com/' + TG_TOKEN)
+updater.bot.setWebhook('https://vegasopros.herokuapp.com/' + TG_TOKEN)
 
 
 
