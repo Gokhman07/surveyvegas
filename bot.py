@@ -23,7 +23,7 @@ def main():
     # создадим переменную my_bot, с помощью которой будем взаимодействовать с нашим ботом
     my_bot = Updater(TG_TOKEN, use_context=True)
     
-    PORT = int(os.environ.get('PORT', 5000))
+    PORT = int(os.environ.get('PORT', 33507))
     updater=Updater(TG_TOKEN,use_context=True)
     updater.start_webhook(listen="0.0.0.0",
     port=int(PORT),
@@ -49,7 +49,7 @@ def main():
 
   
 
-    my_bot.idle()  # бот будет работать пока его не остановят
+   # my_bot.idle()  # бот будет работать пока его не остановят
 
 
 if __name__ == "__main__":
